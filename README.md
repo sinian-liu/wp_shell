@@ -3,11 +3,18 @@ wordpress一键安装脚本
 ```
 wget -N https://raw.githubusercontent.com/sinian-liu/wp_shell/main/main.sh && bash main.sh
 ```
+安装完成后访问：
+```
+http://IP/wp-admin/install.php
+```
 卸载命令
 ```
 find / -name "wp-config.php" 2>/dev/null
 ```
 这个命令将会搜索服务器上的所有目录，并列出所有包含 wp-config.php 文件的路径。
+
+
+
 
 
 ## 引言
