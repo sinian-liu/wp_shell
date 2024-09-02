@@ -8,10 +8,22 @@ wget -N https://raw.githubusercontent.com/sinian-liu/wp_shell/main/main.sh && ba
 http://IP/wp-admin/install.php
 ```
 卸载命令
+1.停止 Docker 服务
+```
+sudo systemctl stop docker
+```
+2.删除 Docker 文件夹
+```
+sudo rm -rf /var/lib/docker
+```
+3.重新启动 Docker 服务
+```
+sudo systemctl start docker
+```
+4.这个命令将会搜索服务器上的所有目录，并列出所有包含 wp-config.php 文件的路径。
 ```
 find / -name "wp-config.php" 2>/dev/null
 ```
-这个命令将会搜索服务器上的所有目录，并列出所有包含 wp-config.php 文件的路径。
 
 
 
