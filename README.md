@@ -27,7 +27,27 @@ sudo systemctl start docker
 find / -name "wp-config.php" 2>/dev/null
 ```
 
+#
+无法卸载重新安装提示
+ERROR: failed to update bridge store for object type *bridge.networkConfiguration: open /var/lib/docker/network/files/local-kv.db: no such file or directory
+解决办法
 
+1.检查 Docker 服务状态：
+```
+sudo systemctl status docker
+```
+2.重新启动 Docker 服务：
+```
+sudo systemctl restart docker
+```
+3.检查文件和目录权限：
+```
+sudo ls -ld /var/lib/docker/network/files
+```
+4.修复 Docker 数据：
+```
+sudo docker system prune
+```
 
 
 
