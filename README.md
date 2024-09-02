@@ -3,6 +3,13 @@ wordpress一键安装脚本
 ```
 wget -N https://raw.githubusercontent.com/sinian-liu/wp_shell/main/main.sh && bash main.sh
 ```
+卸载命令
+```
+find / -name "wp-config.php" 2>/dev/null
+```
+这个命令将会搜索服务器上的所有目录，并列出所有包含 wp-config.php 文件的路径。
+
+
 ## 引言
 受够了无良的宝塔面板，无法忍受lnmp的龟速安装，快来试试wp_shell<br>
 急速安装，全新的vps，五分钟内即可完成安装<br>
