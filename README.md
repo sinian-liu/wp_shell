@@ -8,6 +8,8 @@ wget -N https://raw.githubusercontent.com/sinian-liu/wp_shell/main/main.sh && ba
 http://IP/wp-admin/install.php
 ```
 卸载命令
+
+
 1.停止 Docker 服务
 ```
 sudo systemctl stop docker
